@@ -20,6 +20,9 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_actEdito_Trajectory_triggered();
+
 private:
     Ui::MainWindow *ui;
     const int DOCK_NUMS = 5;

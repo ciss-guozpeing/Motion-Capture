@@ -31,6 +31,7 @@ void MainLayout::initMainLayout()
     m_window->splitDockWidget(list_docks.at(3), list_docks.at(4), Qt::Vertical);
     m_window->splitDockWidget(list_docks.at(3), list_docks.at(5), Qt::Vertical);
 
+    list_docks.at(6)->hide();
     list_docks.at(1)->setMinimumWidth(1000);
     list_docks.at(1)->setFeatures(QDockWidget::NoDockWidgetFeatures);
 }

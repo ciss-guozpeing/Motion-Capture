@@ -20,3 +20,14 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+
+void MainWindow::on_actEdito_Trajectory_triggered()
+{
+    bool isshow = m_MainLayout->list_docks.at(6)->isHidden();
+    if (isshow) {
+        m_MainLayout->list_docks.at(6)->show();
+    } else {
+        m_MainLayout->list_docks.at(6)->hide();
+    }
+}
+

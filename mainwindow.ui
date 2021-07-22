@@ -130,7 +130,7 @@
     <addaction name="action_25"/>
     <addaction name="action_26"/>
     <addaction name="separator"/>
-    <addaction name="Editor_actionTrajectory"/>
+    <addaction name="actEdito_Trajectory"/>
     <addaction name="separator"/>
     <addaction name="actionFull_Screen"/>
     <addaction name="separator"/>
@@ -405,7 +405,7 @@
    <addaction name="wufabiaoji_action"/>
    <addaction name="shanchuguangbiao_action"/>
    <addaction name="separator"/>
-   <addaction name="Editor_actionTrajectory"/>
+   <addaction name="actEdito_Trajectory"/>
   </widget>
   <widget class="QToolBar" name="toolBar_4">
    <property name="windowTitle">
@@ -762,7 +762,7 @@
     <string>消息</string>
    </property>
   </action>
-  <action name="Editor_actionTrajectory">
+  <action name="actEdito_Trajectory">
    <property name="checkable">
     <bool>true</bool>
    </property>
@@ -1256,15 +1256,6 @@
     <string>停止录像</string>
    </property>
   </action>
-  <zorder>dockWidget_1</zorder>
-  <zorder>dockWidget_2</zorder>
-  <zorder>dockWidget_3</zorder>
-  <zorder>dockWidget_4</zorder>
-  <zorder>dockWidget_5</zorder>
-  <zorder>dockWidget_6</zorder>
-  <zorder>dockWidget_7</zorder>
-  <zorder>dockWidget_8</zorder>
-  <zorder>dockWidget_9</zorder>
  </widget>
  <resources>
   <include location="images.qrc"/>
