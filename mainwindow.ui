@@ -1,0 +1,1273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1751</width>
+    <height>916</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1751</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件(F)</string>
+    </property>
+    <widget class="QMenu" name="menu_9">
+     <property name="title">
+      <string>管理设置</string>
+     </property>
+     <addaction name="action_39"/>
+     <addaction name="action_40"/>
+     <addaction name="action_41"/>
+    </widget>
+    <widget class="QMenu" name="menu_E">
+     <property name="title">
+      <string>输出(E)</string>
+     </property>
+     <addaction name="action_C3D"/>
+     <addaction name="action_TSV"/>
+     <addaction name="action_MAT"/>
+     <addaction name="action_AVI"/>
+     <addaction name="actionTo_FBX"/>
+    </widget>
+    <widget class="QMenu" name="menu_10">
+     <property name="title">
+      <string>输入</string>
+     </property>
+     <addaction name="action_42"/>
+    </widget>
+    <addaction name="newAction"/>
+    <addaction name="openAciton"/>
+    <addaction name="action_B"/>
+    <addaction name="saveAction"/>
+    <addaction name="saveAsAction"/>
+    <addaction name="exitAction"/>
+    <addaction name="separator"/>
+    <addaction name="action"/>
+    <addaction name="actionOpen_Project"/>
+    <addaction name="actionSave_Project"/>
+    <addaction name="action_2"/>
+    <addaction name="action_3"/>
+    <addaction name="actionManage_Projects"/>
+    <addaction name="separator"/>
+    <addaction name="menu_9"/>
+    <addaction name="separator"/>
+    <addaction name="menu_E"/>
+    <addaction name="menu_10"/>
+    <addaction name="separator"/>
+    <addaction name="actionRecent_Projects"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>编辑(E)</string>
+    </property>
+    <widget class="QMenu" name="menuEvents">
+     <property name="title">
+      <string>Events</string>
+     </property>
+     <addaction name="newshijian_action"/>
+     <addaction name="separator"/>
+     <addaction name="action_43"/>
+    </widget>
+    <addaction name="undoAction"/>
+    <addaction name="redoAction"/>
+    <addaction name="separator"/>
+    <addaction name="actionDelete"/>
+    <addaction name="actionTrim_Measurement"/>
+    <addaction name="separator"/>
+    <addaction name="action_33"/>
+    <addaction name="action_35"/>
+    <addaction name="separator"/>
+    <addaction name="actionTrajectory"/>
+    <addaction name="actionBone"/>
+    <addaction name="actionLabels"/>
+    <addaction name="menuEvents"/>
+    <addaction name="actionRigid_Body"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>查看(V)</string>
+    </property>
+    <widget class="QMenu" name="menu2D_view">
+     <property name="title">
+      <string>set of view</string>
+     </property>
+     <addaction name="action_3D"/>
+     <addaction name="action_2D"/>
+    </widget>
+    <widget class="QMenu" name="menu_12">
+     <property name="title">
+      <string>轨迹信息</string>
+     </property>
+     <addaction name="yibiaoshi_action"/>
+     <addaction name="wufabiaoji_action"/>
+     <addaction name="shanchuguangbiao_action"/>
+     <addaction name="separator"/>
+     <addaction name="action_A_2"/>
+    </widget>
+    <addaction name="menu_12"/>
+    <addaction name="action_24"/>
+    <addaction name="actionTimeline"/>
+    <addaction name="actionData_Info1"/>
+    <addaction name="actionData_Info2"/>
+    <addaction name="actionData_Info3"/>
+    <addaction name="action_25"/>
+    <addaction name="action_26"/>
+    <addaction name="separator"/>
+    <addaction name="Editor_actionTrajectory"/>
+    <addaction name="separator"/>
+    <addaction name="actionFull_Screen"/>
+    <addaction name="separator"/>
+    <addaction name="action_32"/>
+    <addaction name="separator"/>
+    <addaction name="menu2D_view"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>播放(P)</string>
+    </property>
+    <addaction name="bofang_action"/>
+    <addaction name="zanting_action"/>
+    <addaction name="daodai_action"/>
+    <addaction name="separator"/>
+    <addaction name="action_5"/>
+    <addaction name="separator"/>
+    <addaction name="diyizhen_action"/>
+    <addaction name="zuihouyizhen_action"/>
+    <addaction name="separator"/>
+    <addaction name="shang_action"/>
+    <addaction name="xia_action"/>
+    <addaction name="separator"/>
+    <addaction name="jin20_action"/>
+    <addaction name="tui_action"/>
+    <addaction name="actionPlay_with_Real_Time_Output"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>捕捉(C)</string>
+    </property>
+    <addaction name="caiji_action"/>
+    <addaction name="separator"/>
+    <addaction name="Calibrate_action"/>
+    <addaction name="actionRefine_Calibration"/>
+    <addaction name="separator"/>
+    <addaction name="actionCalibrate_Twin_System"/>
+    <addaction name="actionCalibrate_Dikablis_Eye_Tracker"/>
+    <addaction name="separator"/>
+    <addaction name="trajectory_action"/>
+    <addaction name="power_action"/>
+    <addaction name="separator"/>
+    <addaction name="shexiangline_action"/>
+   </widget>
+   <widget class="QMenu" name="menuAIM">
+    <property name="title">
+     <string>AIM(A)</string>
+    </property>
+    <addaction name="yingyong_action"/>
+    <addaction name="shengcheng_action"/>
+    <addaction name="action_AIM"/>
+   </widget>
+   <widget class="QMenu" name="menuSkeleton">
+    <property name="title">
+     <string>Skeleton</string>
+    </property>
+    <addaction name="actionCalibrate_Skeletons"/>
+    <addaction name="separator"/>
+    <addaction name="actionDisplay_Animation_Marker_Set_Guide"/>
+    <addaction name="actionDisplay_Sports_Marker_Set_Guide"/>
+   </widget>
+   <widget class="QMenu" name="menu_T">
+    <property name="title">
+     <string>工具(T)</string>
+    </property>
+    <addaction name="shezhiAction"/>
+    <addaction name="AnalyzeTrajectory_action"/>
+   </widget>
+   <widget class="QMenu" name="menu_W">
+    <property name="title">
+     <string>窗口(W)</string>
+    </property>
+    <widget class="QMenu" name="menu_6">
+     <property name="title">
+      <string>新的窗口</string>
+     </property>
+     <addaction name="action2D"/>
+     <addaction name="action3D"/>
+    </widget>
+    <widget class="QMenu" name="menu_7">
+     <property name="title">
+      <string>窗口布局</string>
+     </property>
+     <widget class="QMenu" name="menu_8">
+      <property name="title">
+       <string>另存为</string>
+      </property>
+      <addaction name="action_16"/>
+      <addaction name="action_17"/>
+      <addaction name="action_18"/>
+      <addaction name="action_19"/>
+      <addaction name="action_20"/>
+      <addaction name="action_21"/>
+      <addaction name="action_22"/>
+     </widget>
+     <addaction name="action_1"/>
+     <addaction name="action_9"/>
+     <addaction name="action_10"/>
+     <addaction name="action_11"/>
+     <addaction name="action_12"/>
+     <addaction name="action_13"/>
+     <addaction name="action_14"/>
+     <addaction name="menu_8"/>
+    </widget>
+    <addaction name="menu_6"/>
+    <addaction name="action_C"/>
+    <addaction name="action_T"/>
+    <addaction name="action_7"/>
+    <addaction name="menu_7"/>
+   </widget>
+   <widget class="QMenu" name="menu_H">
+    <property name="title">
+     <string>帮助(H)</string>
+    </property>
+    <addaction name="action_A"/>
+   </widget>
+   <widget class="QMenu" name="menu_11">
+    <property name="title">
+     <string>加油！</string>
+    </property>
+    <addaction name="actStartCamera"/>
+    <addaction name="actStopCamera"/>
+    <addaction name="actVideoRecord"/>
+    <addaction name="actVideoStop"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_5"/>
+   <addaction name="menuAIM"/>
+   <addaction name="menuSkeleton"/>
+   <addaction name="menu_T"/>
+   <addaction name="menu_W"/>
+   <addaction name="menu_H"/>
+   <addaction name="menu_11"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar_1">
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>6</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>12</width>
+     <height>10</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="newAction"/>
+   <addaction name="openAciton"/>
+   <addaction name="saveAction"/>
+   <addaction name="shezhiAction"/>
+   <addaction name="separator"/>
+   <addaction name="undoAction"/>
+   <addaction name="redoAction"/>
+   <addaction name="separator"/>
+   <addaction name="action_2D"/>
+   <addaction name="action_3D"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_2">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>12</width>
+     <height>10</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="caiji_action"/>
+   <addaction name="Calibrate_action"/>
+   <addaction name="trajectory_action"/>
+   <addaction name="power_action"/>
+   <addaction name="shexiangline_action"/>
+   <addaction name="separator"/>
+   <addaction name="newshijian_action"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_3">
+   <property name="windowTitle">
+    <string>toolBar_3</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>12</width>
+     <height>10</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="diyizhen_action"/>
+   <addaction name="tui_action"/>
+   <addaction name="shang_action"/>
+   <addaction name="daodai_action"/>
+   <addaction name="zanting_action"/>
+   <addaction name="bofang_action"/>
+   <addaction name="xia_action"/>
+   <addaction name="jin20_action"/>
+   <addaction name="zuihouyizhen_action"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_5">
+   <property name="windowTitle">
+    <string>toolBar_5</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>12</width>
+     <height>10</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="yingyong_action"/>
+   <addaction name="shengcheng_action"/>
+   <addaction name="separator"/>
+   <addaction name="actionCalibrate_Skeletons"/>
+   <addaction name="separator"/>
+   <addaction name="AnalyzeTrajectory_action"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_6">
+   <property name="windowTitle">
+    <string>toolBar_6</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>12</width>
+     <height>10</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionData_Info1"/>
+   <addaction name="actionData_Info2"/>
+   <addaction name="actionData_Info3"/>
+   <addaction name="separator"/>
+   <addaction name="action_25"/>
+   <addaction name="action_26"/>
+   <addaction name="separator"/>
+   <addaction name="yibiaoshi_action"/>
+   <addaction name="wufabiaoji_action"/>
+   <addaction name="shanchuguangbiao_action"/>
+   <addaction name="separator"/>
+   <addaction name="Editor_actionTrajectory"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_4">
+   <property name="windowTitle">
+    <string>toolBar_4</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="newAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/filenew.png</normaloff>:/png/images/filenew.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建(&amp;N)</string>
+   </property>
+   <property name="toolTip">
+    <string>创建一个文档</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="openAciton">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/fileopen.png</normaloff>:/png/images/fileopen.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开(&amp;O)</string>
+   </property>
+   <property name="toolTip">
+    <string>打开已存在的文档</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="action_B">
+   <property name="text">
+    <string>批量处理(B)</string>
+   </property>
+  </action>
+  <action name="saveAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/filesave.png</normaloff>:/png/images/filesave.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存(S)</string>
+   </property>
+   <property name="toolTip">
+    <string>将当前文档存盘</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="saveAsAction">
+   <property name="text">
+    <string>另存为(A)</string>
+   </property>
+   <property name="toolTip">
+    <string>以一个新名字保存文档</string>
+   </property>
+  </action>
+  <action name="exitAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>退出(X)</string>
+   </property>
+   <property name="toolTip">
+    <string>退出应用程序</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F4</string>
+   </property>
+  </action>
+  <action name="undoAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/chexiao.png</normaloff>:/png/images/chexiao.png</iconset>
+   </property>
+   <property name="text">
+    <string>撤销(U)</string>
+   </property>
+   <property name="toolTip">
+    <string>撤销当前操作</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="redoAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/chongzuo.png</normaloff>:/png/images/chongzuo.png</iconset>
+   </property>
+   <property name="text">
+    <string>重做(R)</string>
+   </property>
+   <property name="toolTip">
+    <string>恢复之前操作</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>新建项目</string>
+   </property>
+  </action>
+  <action name="actionOpen_Project">
+   <property name="text">
+    <string>Open Project</string>
+   </property>
+  </action>
+  <action name="actionSave_Project">
+   <property name="text">
+    <string>Save Project</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>重命名项目</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>打开项目 文件</string>
+   </property>
+  </action>
+  <action name="actionManage_Projects">
+   <property name="text">
+    <string>Manage Projects</string>
+   </property>
+  </action>
+  <action name="action2D">
+   <property name="text">
+    <string>2D</string>
+   </property>
+  </action>
+  <action name="action3D">
+   <property name="text">
+    <string>3D</string>
+   </property>
+  </action>
+  <action name="action_C">
+   <property name="text">
+    <string>层叠(C)</string>
+   </property>
+  </action>
+  <action name="action_T">
+   <property name="text">
+    <string>横向平铺(T)</string>
+   </property>
+  </action>
+  <action name="action_7">
+   <property name="text">
+    <string>纵向平铺</string>
+   </property>
+  </action>
+  <action name="action_1">
+   <property name="text">
+    <string>形式1</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+1</string>
+   </property>
+  </action>
+  <action name="action_9">
+   <property name="text">
+    <string>形式2</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+2</string>
+   </property>
+  </action>
+  <action name="action_10">
+   <property name="text">
+    <string>形式3</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+3</string>
+   </property>
+  </action>
+  <action name="action_11">
+   <property name="text">
+    <string>形式4</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+4</string>
+   </property>
+  </action>
+  <action name="action_12">
+   <property name="text">
+    <string>形式5</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+5</string>
+   </property>
+  </action>
+  <action name="action_13">
+   <property name="text">
+    <string>默认存储形式</string>
+   </property>
+  </action>
+  <action name="action_14">
+   <property name="text">
+    <string>默认捕捉形式</string>
+   </property>
+  </action>
+  <action name="action_16">
+   <property name="text">
+    <string>形式1</string>
+   </property>
+  </action>
+  <action name="action_17">
+   <property name="text">
+    <string>形式2</string>
+   </property>
+  </action>
+  <action name="action_18">
+   <property name="text">
+    <string>形式3</string>
+   </property>
+  </action>
+  <action name="action_19">
+   <property name="text">
+    <string>形式4</string>
+   </property>
+  </action>
+  <action name="action_20">
+   <property name="text">
+    <string>形式5</string>
+   </property>
+  </action>
+  <action name="action_21">
+   <property name="text">
+    <string>默认存储形式</string>
+   </property>
+  </action>
+  <action name="action_22">
+   <property name="text">
+    <string>默认捕捉形式</string>
+   </property>
+  </action>
+  <action name="action_A">
+   <property name="text">
+    <string>关于(A)</string>
+   </property>
+  </action>
+  <action name="shezhiAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/shezhi.jpg</normaloff>:/png/images/shezhi.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>工具区选项</string>
+   </property>
+  </action>
+  <action name="action_24">
+   <property name="text">
+    <string>工具栏</string>
+   </property>
+  </action>
+  <action name="actionTimeline">
+   <property name="text">
+    <string>Timeline</string>
+   </property>
+  </action>
+  <action name="actionData_Info1">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/positionzuoshang.png</normaloff>:/png/images/positionzuoshang.png</iconset>
+   </property>
+   <property name="text">
+    <string>Data Info1</string>
+   </property>
+  </action>
+  <action name="actionData_Info2">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/positionzuozhong.png</normaloff>:/png/images/positionzuozhong.png</iconset>
+   </property>
+   <property name="text">
+    <string>Data Info2</string>
+   </property>
+  </action>
+  <action name="actionData_Info3">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/positionzuoxia.png</normaloff>:/png/images/positionzuoxia.png</iconset>
+   </property>
+   <property name="text">
+    <string>Data Info3</string>
+   </property>
+  </action>
+  <action name="action_25">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/positionzuo.png</normaloff>:/png/images/positionzuo.png</iconset>
+   </property>
+   <property name="text">
+    <string>工程预览</string>
+   </property>
+  </action>
+  <action name="action_26">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/positionxia.png</normaloff>:/png/images/positionxia.png</iconset>
+   </property>
+   <property name="text">
+    <string>消息</string>
+   </property>
+  </action>
+  <action name="Editor_actionTrajectory">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/guijibianjiqi.png</normaloff>:/png/images/guijibianjiqi.png</iconset>
+   </property>
+   <property name="text">
+    <string>Trajectory Editor</string>
+   </property>
+  </action>
+  <action name="actionFull_Screen">
+   <property name="text">
+    <string>Full Screen</string>
+   </property>
+  </action>
+  <action name="action_32">
+   <property name="text">
+    <string>文件信息</string>
+   </property>
+  </action>
+  <action name="action_3D">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/3d.png</normaloff>:/png/images/3d.png</iconset>
+   </property>
+   <property name="text">
+    <string>转换到3D视角</string>
+   </property>
+  </action>
+  <action name="action_2D">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/2d.png</normaloff>:/png/images/2d.png</iconset>
+   </property>
+   <property name="text">
+    <string>转换到2D视角</string>
+   </property>
+   <property name="toolTip">
+    <string>转换到2D视角</string>
+   </property>
+  </action>
+  <action name="actionRecent_Projects">
+   <property name="text">
+    <string>Recent Projects</string>
+   </property>
+  </action>
+  <action name="action_39">
+   <property name="text">
+    <string>设置备份与重置</string>
+   </property>
+  </action>
+  <action name="action_40">
+   <property name="text">
+    <string>从另一项目导入</string>
+   </property>
+  </action>
+  <action name="action_41">
+   <property name="text">
+    <string>项目预设</string>
+   </property>
+  </action>
+  <action name="action_C3D">
+   <property name="text">
+    <string>输出C3D</string>
+   </property>
+  </action>
+  <action name="action_TSV">
+   <property name="text">
+    <string>输出TSV</string>
+   </property>
+  </action>
+  <action name="action_MAT">
+   <property name="text">
+    <string>输出MAT</string>
+   </property>
+  </action>
+  <action name="action_AVI">
+   <property name="text">
+    <string>到AVI</string>
+   </property>
+  </action>
+  <action name="actionTo_FBX">
+   <property name="text">
+    <string>To FBX</string>
+   </property>
+  </action>
+  <action name="action_42">
+   <property name="text">
+    <string>添加链接到视频文件</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </action>
+  <action name="actionTrim_Measurement">
+   <property name="text">
+    <string>Trim Measurement</string>
+   </property>
+  </action>
+  <action name="bofang_action">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/bofang.png</normaloff>:/png/images/bofang.png</iconset>
+   </property>
+   <property name="text">
+    <string>播放(P)</string>
+   </property>
+  </action>
+  <action name="zanting_action">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/zanting.png</normaloff>:/png/images/zanting.png</iconset>
+   </property>
+   <property name="text">
+    <string>暂停</string>
+   </property>
+  </action>
+  <action name="daodai_action">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/daodai.png</normaloff>:/png/images/daodai.png</iconset>
+   </property>
+   <property name="text">
+    <string>倒带</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="text">
+    <string>移至某帧</string>
+   </property>
+  </action>
+  <action name="diyizhen_action">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/diyizhen.png</normaloff>:/png/images/diyizhen.png</iconset>
+   </property>
+   <property name="text">
+    <string>第一帧(F)</string>
+   </property>
+   <property name="shortcut">
+    <string>Home</string>
+   </property>
+  </action>
+  <action name="zuihouyizhen_action">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/zuihouyizhen.png</normaloff>:/png/images/zuihouyizhen.png</iconset>
+   </property>
+   <property name="text">
+    <string>最后一帧(L)</string>
+   </property>
+   <property name="shortcut">
+    <string>End</string>
+   </property>
+  </action>
+  <action name="shang_action">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/shangyizhen.png</normaloff>:/png/images/shangyizhen.png</iconset>
+   </property>
+   <property name="text">
+    <string>上一帧</string>
+   </property>
+  </action>
+  <action name="xia_action">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/xiayizhen.png</normaloff>:/png/images/xiayizhen.png</iconset>
+   </property>
+   <property name="text">
+    <string>下一帧</string>
+   </property>
+  </action>
+  <action name="jin20_action">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/jin20.png</normaloff>:/png/images/jin20.png</iconset>
+   </property>
+   <property name="text">
+    <string>前进二十帧</string>
+   </property>
+  </action>
+  <action name="tui_action">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/tui20.png</normaloff>:/png/images/tui20.png</iconset>
+   </property>
+   <property name="text">
+    <string>后退二十帧</string>
+   </property>
+  </action>
+  <action name="actionPlay_with_Real_Time_Output">
+   <property name="text">
+    <string>Play with Real-Time Output</string>
+   </property>
+  </action>
+  <action name="caiji_action">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/caiji.png</normaloff>:/png/images/caiji.png</iconset>
+   </property>
+   <property name="text">
+    <string>采集</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+M</string>
+   </property>
+  </action>
+  <action name="Calibrate_action">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/calibrate.png</normaloff>:/png/images/calibrate.png</iconset>
+   </property>
+   <property name="text">
+    <string>Calibrate</string>
+   </property>
+  </action>
+  <action name="actionRefine_Calibration">
+   <property name="text">
+    <string>Refine Calibration</string>
+   </property>
+  </action>
+  <action name="actionCalibrate_Twin_System">
+   <property name="text">
+    <string>Calibrate Twin System</string>
+   </property>
+  </action>
+  <action name="actionCalibrate_Dikablis_Eye_Tracker">
+   <property name="text">
+    <string>Calibrate Dikablis Eye Tracker</string>
+   </property>
+  </action>
+  <action name="trajectory_action">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/trajectory.png</normaloff>:/png/images/trajectory.png</iconset>
+   </property>
+   <property name="text">
+    <string>重新生成轨迹(R)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+R</string>
+   </property>
+  </action>
+  <action name="power_action">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/power.png</normaloff>:/png/images/power.png</iconset>
+   </property>
+   <property name="text">
+    <string>重新计算力(F)</string>
+   </property>
+  </action>
+  <action name="shexiangline_action">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/calculation.png</normaloff>:/png/images/calculation.png</iconset>
+   </property>
+   <property name="text">
+    <string>摄像机线性化</string>
+   </property>
+  </action>
+  <action name="yingyong_action">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/yingyongmoxing.png</normaloff>:/png/images/yingyongmoxing.png</iconset>
+   </property>
+   <property name="text">
+    <string>应用模型(A)</string>
+   </property>
+   <property name="shortcut">
+    <string>F9</string>
+   </property>
+  </action>
+  <action name="shengcheng_action">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/shengchengmoxing.png</normaloff>:/png/images/shengchengmoxing.png</iconset>
+   </property>
+   <property name="text">
+    <string>生成模型(G)</string>
+   </property>
+  </action>
+  <action name="action_AIM">
+   <property name="text">
+    <string>由多个数据文件生成AIM模型</string>
+   </property>
+  </action>
+  <action name="actionCalibrate_Skeletons">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/bone.png</normaloff>:/png/images/bone.png</iconset>
+   </property>
+   <property name="text">
+    <string>Calibrate Skeletons</string>
+   </property>
+   <property name="shortcut">
+    <string>F10</string>
+   </property>
+  </action>
+  <action name="actionDisplay_Animation_Marker_Set_Guide">
+   <property name="text">
+    <string>Display Animation Marker Set Guide</string>
+   </property>
+  </action>
+  <action name="actionDisplay_Sports_Marker_Set_Guide">
+   <property name="text">
+    <string>Display Sports Marker Set Guide</string>
+   </property>
+  </action>
+  <action name="AnalyzeTrajectory_action">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/Trajectoryanalysis.png</normaloff>:/png/images/Trajectoryanalysis.png</iconset>
+   </property>
+   <property name="text">
+    <string>Analyze Trajectory</string>
+   </property>
+  </action>
+  <action name="action_33">
+   <property name="text">
+    <string>查找</string>
+   </property>
+  </action>
+  <action name="action_35">
+   <property name="text">
+    <string>查找下一个</string>
+   </property>
+  </action>
+  <action name="actionTrajectory">
+   <property name="text">
+    <string>Trajectory</string>
+   </property>
+  </action>
+  <action name="actionBone">
+   <property name="text">
+    <string>Bone</string>
+   </property>
+  </action>
+  <action name="actionLabels">
+   <property name="text">
+    <string>Labels</string>
+   </property>
+  </action>
+  <action name="actionRigid_Body">
+   <property name="text">
+    <string>Rigid Body</string>
+   </property>
+  </action>
+  <action name="newshijian_action">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/chuangjian.png</normaloff>:/png/images/chuangjian.png</iconset>
+   </property>
+   <property name="text">
+    <string>创建新事件</string>
+   </property>
+  </action>
+  <action name="action_43">
+   <property name="text">
+    <string>编辑事件列表</string>
+   </property>
+  </action>
+  <action name="yibiaoshi_action">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/yibiaoshichuangkou.png</normaloff>:/png/images/yibiaoshichuangkou.png</iconset>
+   </property>
+   <property name="text">
+    <string>已标识窗口(L)</string>
+   </property>
+  </action>
+  <action name="wufabiaoji_action">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/wufabiaoshi.png</normaloff>:/png/images/wufabiaoshi.png</iconset>
+   </property>
+   <property name="text">
+    <string>无法标记窗口(U)</string>
+   </property>
+  </action>
+  <action name="shanchuguangbiao_action">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/png/images/shanchuguangbiao.png</normaloff>:/png/images/shanchuguangbiao.png</iconset>
+   </property>
+   <property name="text">
+    <string>删除光标窗口(D)</string>
+   </property>
+  </action>
+  <action name="action_A_2">
+   <property name="text">
+    <string>全部(A)</string>
+   </property>
+  </action>
+  <action name="actStartCamera">
+   <property name="text">
+    <string>开启摄像头</string>
+   </property>
+   <property name="toolTip">
+    <string>开启摄像头</string>
+   </property>
+  </action>
+  <action name="actStopCamera">
+   <property name="text">
+    <string>关闭摄像头</string>
+   </property>
+  </action>
+  <action name="actVideoRecord">
+   <property name="text">
+    <string>开始录像</string>
+   </property>
+  </action>
+  <action name="actVideoStop">
+   <property name="text">
+    <string>停止录像</string>
+   </property>
+  </action>
+  <zorder>dockWidget_1</zorder>
+  <zorder>dockWidget_2</zorder>
+  <zorder>dockWidget_3</zorder>
+  <zorder>dockWidget_4</zorder>
+  <zorder>dockWidget_5</zorder>
+  <zorder>dockWidget_6</zorder>
+  <zorder>dockWidget_7</zorder>
+  <zorder>dockWidget_8</zorder>
+  <zorder>dockWidget_9</zorder>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>
